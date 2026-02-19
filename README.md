@@ -24,6 +24,10 @@ export CUMM_DISABLE_JIT="1" # build whl then install
 export CUMM_CUDA_ARCH_LIST="10.0"
 python3 setup.py bdist_wheel
 pip install dist/cumm_cu128-0.8.2-cp312-cp312-linux_x86_64.whl
+
+# or you can download our prebuilt whl and install
+wget https://github.com/RayYoh/cumm/releases/download/cu128_py312/cumm_cu128-0.8.2-cp312-cp312-linux_x86_64.whl
+pip install cumm_cu128-0.8.2-cp312-cp312-linux_x86_64.whl
 ```
 
 `spconv` install
@@ -36,6 +40,10 @@ export SPCONV_DISABLE_JIT="1"
 cd spconv
 python3 setup.py bdist_wheel
 pip install dist/spconv_cu128-2.3.8-cp312-cp312-linux_x86_64.whl
+
+# or you can download our prebuild whl and install
+wget https://github.com/RayYoh/spconv-12.8/releases/download/spconv128/spconv_cu128-2.3.8-cp312-cp312-linux_x86_64.whl
+pip spconv_cu128-2.3.8-cp312-cp312-linux_x86_64.whl
 
 # test
 python test/benchmark.py && \
