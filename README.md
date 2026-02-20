@@ -4,15 +4,15 @@
 
 </div>
 
-This tutorial provides a step-by-step guide on how to compile and install `cumm` and `spconv` from source specifically for CUDA 12.8.
+This tutorial provides a step-by-step guide to compiling and installing `cumm` and `spconv` from source, specifically for CUDA 12.8.
 
-This tutorial has benn tested on CUDA 12.8, Python 3.12, and CUDA arch 10.0.
+This tutorial has been tested on CUDA 12.8, Python 3.12, and CUDA arch 10.0.
 
 Steps:
 
 `cumm` install
 ```bash
-# if cumm is intalled, uninstall it
+# if cumm is installed, uninstall it
 pip list | grep cumm # pip uninstall cumm
 export CUDA_PATH="path/to/you/cuda/dir/"
 git clone https://github.com/RayYoh/cumm.git
@@ -41,7 +41,7 @@ cd spconv
 python3 setup.py bdist_wheel
 pip install dist/spconv_cu128-2.3.8-cp312-cp312-linux_x86_64.whl
 
-# or you can download our prebuild whl and install
+# or you can download our prebuilt whl and install
 wget https://github.com/RayYoh/spconv-12.8/releases/download/spconv128/spconv_cu128-2.3.8-cp312-cp312-linux_x86_64.whl
 pip spconv_cu128-2.3.8-cp312-cp312-linux_x86_64.whl
 
