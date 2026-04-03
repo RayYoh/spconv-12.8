@@ -37,7 +37,6 @@ git clone https://github.com/kenomo/spconv.git
 
 cd spconv
 export SPCONV_DISABLE_JIT="1"
-cd spconv
 python3 setup.py bdist_wheel
 pip install dist/spconv_cu128-2.3.8-cp312-cp312-linux_x86_64.whl
 
